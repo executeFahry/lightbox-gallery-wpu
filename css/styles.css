@@ -17,8 +17,8 @@ h1 {
 .container {
     width: 600px;
     background-color: white;
-    margin: auto;
-    padding: 10px;
+    margin: 80px auto;
+    padding: 30px;
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 0 0 2px .5px rgba(0, 0, 0, .3);
@@ -79,7 +79,7 @@ h1 {
     z-index: 99999;
     transition: .6s;
     text-align: center;
-    padding: 140px;
+    padding:145px 140px;
 }
 
 .overlay:target {
@@ -107,6 +107,7 @@ h1 {
     margin-left: -2.5px;
     color: rgb(210, 210, 210);
     opacity: 0;
+    font-size: 1.5em;
 }
 
 .overlay .close:hover {
@@ -115,6 +116,59 @@ h1 {
 
 .overlay:target .close {
     animation: slideDownFade .5s .5s forwards;
+}
+
+
+/* navigasi */
+.next, .prev {
+    position: absolute;
+    color: rgb(210, 210, 210);
+    opacity: 0;
+}
+
+#photo1 .next, #photo1 .prev {
+    top: 45%
+}
+
+#photo1 .next {
+    margin-left: 355px;
+}
+
+#photo1 .prev {
+    margin-left: -48px;
+}
+
+#photo2 .next, #photo2 .prev {
+    top: 40%;
+}
+
+#photo2 .next {
+    margin-left: 665px;
+}
+
+#photo2 .prev {
+    margin-left: -50px;
+}
+
+#photo3 .next, #photo3 .prev {
+    top: 42%;
+}
+
+#photo3 .next {
+    margin-left: 665px;
+}
+
+#photo3 .prev {
+    margin-left: -46px;
+}
+
+.next:hover, .prev:hover {
+    color: white;
+}
+
+.overlay:target .next, 
+.overlay:target .prev {
+    animation: fadeOnly .5s .5s forwards;
 }
 
 /* animation */
@@ -139,5 +193,15 @@ h1 {
     100% {
         opacity: 1;
         margin-top: 0;
+    }
+}
+
+@keyframes fadeOnly {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

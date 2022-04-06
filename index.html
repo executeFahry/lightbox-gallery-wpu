@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
     <title>Lightbox Gallery</title>
   </head>
   <body>
@@ -19,6 +25,12 @@
           </a>
           <div class="overlay" id="photo1">
             <a href="#" class="close">✖</a>
+            <a href="#photo3" class="prev"
+              ><i class="fas fa-chevron-left fa-2x"></i
+            ></a>
+            <a href="#photo2" class="next"
+              ><i class="fas fa-chevron-right fa-2x"></i
+            ></a>
             <img src="/img/full/photo1.jpg" alt="Lake" />
           </div>
         </li>
@@ -29,6 +41,12 @@
           </a>
           <div class="overlay" id="photo2">
             <a href="#" class="close">✖</a>
+            <a href="#photo1" class="prev"
+              ><i class="fas fa-chevron-left fa-2x"></i
+            ></a>
+            <a href="#photo3" class="next"
+              ><i class="fas fa-chevron-right fa-2x"></i
+            ></a>
             <img src="/img/full/photo2.jpg" alt="Mountain" />
           </div>
         </li>
@@ -39,6 +57,12 @@
           </a>
           <div class="overlay" id="photo3">
             <a href="#" class="close">✖</a>
+            <a href="#photo2" class="prev"
+              ><i class="fas fa-chevron-left fa-2x"></i
+            ></a>
+            <a href="#photo1" class="next"
+              ><i class="fas fa-chevron-right fa-2x"></i
+            ></a>
             <img src="/img/full/photo3.jpg" alt="Forest" />
           </div>
         </li>
